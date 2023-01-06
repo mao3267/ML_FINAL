@@ -9,7 +9,7 @@ This repository is my implementation of [TPS - Aug 2022](https://www.kaggle.com/
 
 ### Run on Google Colab (Recommended)
 
-You need to get your Kaggle API Token (kaggle.json) first. The tutorial is [here](https://www.kaggle.com/general/74235). \\
+You need to get your Kaggle API Token (kaggle.json) first. The tutorial is [here](https://www.kaggle.com/general/74235).
 After you start to run the whole notebook, the third block will ask you to upload your token.
 
 ### Local 
@@ -54,7 +54,7 @@ You can download pretrained models here:
 
 My model achieves the following performance on the test data:
 
-| Model name         | Public Score    | Private Score  |
+| Model name         | Private Score   | Public Score   |
 | ------------------ |---------------- | -------------- |
 | My Model           |     0.59108     |      0.5897    |
 
