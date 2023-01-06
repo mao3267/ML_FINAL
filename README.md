@@ -3,8 +3,7 @@
 This repository is my implementation of [TPS - Aug 2022](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/overview). 
 
 ### My Results (Late Submission)
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
-
+>📋  Optional: include a graphic explaining your approach/main result.
 ## Requirements
 
 ### Run on Google Colab (Recommended)
@@ -14,9 +13,8 @@ After you start to run the whole notebook, the third block will ask you to uploa
 
 ### Local 
 To install requirements:
-
-```setup
-pip install -r requirements.txt
+```
+pip install feature-engine
 ```
 
 >📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
@@ -36,17 +34,17 @@ You can test your own feature sets by changing the `feature_used` list and set u
 To evaluate my model on test data and generate a submission, run:
 
 ```eval
-python eval.py 
+python eval.py
 ```
-
+- The preprocessed test data is in `train/proc_test.csv`, and the model weight is in `train/model.pkl`
 - You can submit the submission.csv to the Kaggle for late submission and check your score.
-- Take a look on the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
+- Take a look at the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
 
 ## Pre-trained Models
 
 You can download pretrained models here:
 
-- [My model](https://drive.google.com/mymodel.pth). 
+- [5 Models for ensemble](https://drive.google.com/mymodel.pth). 
 
 >📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
