@@ -3,21 +3,30 @@
 This repository is my implementation of [TPS - Aug 2022](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/overview). 
 
 ### My Results (Late Submission)
->📋  Optional: include a graphic explaining your approach/main result.
+![](https://i.imgur.com/IrSKuig.png)
 ## Requirements
 
-### Run on Google Colab (Recommended)
+### On Google Colab (Recommended)
 
 You need to get your Kaggle API Token (kaggle.json) first. The tutorial is [here](https://www.kaggle.com/general/74235).
 After you start to run the whole notebook, the third block will ask you to upload your token.
 
 ### Local 
+Use a virtualenv on Mac by
+```
+brew install virtualenv
+
+virtualenv -p <your-python-path> ml_final
+```
+Enter the virtual environment
+```sh
+. ./ml_final/bin/activate
+```
 To install requirements:
 ```
-pip install feature-engine
+pip install -r requirements.txt
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
 ## Training
 
@@ -31,13 +40,26 @@ You can test your own feature sets by changing the `feature_used` list and set u
 
 ## Evaluation
 
+### On Google Colab
+
+The notebook will evaluate at the `submission` section. If you want to evaluate on your own models, use the `eval.py` at local.
+
+### Local
+
+#### Before evaluation
+- Store your models as `model_i.pkl` in `./model` under your working directory. 
+- Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
+```
+unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
+```
+
 To evaluate my model on test data and generate a submission, run:
 
 ```eval
-python eval.py
+python3 eval.py
 ```
-- The preprocessed test data is in `train/proc_test.csv`, and the model weight is in `train/model.pkl`
-- You can submit the submission.csv to the Kaggle for late submission and check your score.
+
+- You can submit the submission.csv to the Kaggle as late submission to check your score.
 - Take a look at the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
 
 ## Pre-trained Models
@@ -46,15 +68,13 @@ You can download pretrained models here:
 
 - [5 Models for ensemble](https://drive.google.com/mymodel.pth). 
 
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
-
 ## Results
 
 My model achieves the following performance on the test data:
 
 | Model name         | Private Score   | Public Score   |
 | ------------------ |---------------- | -------------- |
-| My Model           |     0.59108     |      0.5897    |
+| My Model           |     0.59141     |      0.58964   |
 
 
 ## References
