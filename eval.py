@@ -108,7 +108,10 @@ if __name__ == "__main__":
         for feature in test.columns
         if feature.startswith("measurement") or feature == "loading"
     ]
-    x, test = preprocess(train, test, features_preprocess)
+
+    # Comment this if you don't need the preprocessing
+    # Make sure that there is no invalid data
+    train, test = preprocess(train, test, features_preprocess)
     result = np.zeros(len(test))
 
     feature_used = [
@@ -124,14 +127,15 @@ if __name__ == "__main__":
     ]
 
     models = []
-
+    # load models
     for i in range(5):
         with open(f"model/model_{i+1}.pkl", "rb") as f:
             models.append(pickle.load(f))
-
+    # predict the results
     for model in models:
-        result += regression(model, x, test, feature_used) / 5
+        result += regression(model, train, test, feature_used) / 5
 
+    # write to csv
     submission = pd.read_csv("train/sample_submission.csv")
     submission["failure"] = result
     submission.to_csv("submission.csv", index=False)
