@@ -15,7 +15,9 @@ After you start to run the whole notebook, the third block will ask you to uploa
 Use a virtualenv on Mac by
 ```
 brew install virtualenv
-
+```
+Create a new virtual environment
+```
 virtualenv -p <your-python-path> ml_final
 ```
 Enter the virtual environment
@@ -26,7 +28,6 @@ To install requirements:
 ```
 pip install -r requirements.txt
 ```
-
 
 ## Training
 
@@ -47,18 +48,20 @@ The notebook will evaluate at the `submission` section. If you want to evaluate 
 ### Local
 
 #### Before evaluation
-- Store your models as `model_i.pkl` in `./model` under your working directory. 
+- Store the models as `model_i.pkl` in `./model` under your working directory. 
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
 ```
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
 
+#### Start evalution
 To evaluate my model on test data and generate a submission, run:
 
 ```eval
 python3 eval.py
 ```
-
+- All the preprocess on test.csv is done in `eval.py`
+- If you want to use your own preprocessed data, comment the function `preprocess`. 
 - You can submit the submission.csv to the Kaggle as late submission to check your score.
 - Take a look at the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
 
