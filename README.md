@@ -69,7 +69,7 @@ python3 eval.py
 
 You can download pretrained models here:
 
-- [5 Models for ensemble](https://drive.google.com/mymodel.pth). 
+- [5 Models for ensemble](https://drive.google.com/drive/folders/11daP6XIH65Hw24mCHLO25GiEf7y93gWQ?usp=sharing). 
 
 ## Results
 
@@ -84,4 +84,5 @@ My model achieves the following performance on the test data:
 - Feature engineering based on [TPSAUG22 EDA which makes sense ⭐️⭐️⭐️⭐️⭐️](https://www.kaggle.com/code/ambrosm/tpsaug22-eda-which-makes-sense#The-float-columns)
 - Impute measurement_17 based on [Perfect Positive Correlation with measurement_17](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/discussion/343939)
 - Scale the data according to [Adversarial validation - detecting data drift](https://www.kaggle.com/code/nnjjpp/adversarial-validation-detecting-data-drift)
-- WoE and HuberRegression from [tps-aug22-9th-solution](https://www.kaggle.com/code/takanashihumbert/tps-aug22-9th-solution/notebook)
+- HuberRegression and measurement_17 from [tps-aug22-9th-solution](https://www.kaggle.com/code/takanashihumbert/tps-aug22-9th-solution/notebook)
+- Weight of Evidence from [Combine LogisticRegression](https://www.kaggle.com/code/argyrisanastopoulos/private-score-0-59144-combine-logisticregression)
