@@ -14,19 +14,19 @@ After you start to run the whole notebook, the third block will ask you to uploa
 ### Local 
 My local environment: MacOS M1 Ventura
 Use a virtualenv on Mac by
-```
+```zsh
 brew install virtualenv
 ```
 Create a new virtual environment
-```
+```zsh
 virtualenv -p <your-python-path> ml_final
 ```
 Enter the virtual environment
-```sh
+```zsh
 . ./ml_final/bin/activate
 ```
 To install requirements:
-```
+```zsh
 pip install -r requirements.txt
 ```
 
@@ -39,7 +39,7 @@ To train the model(s), click on Runtime -> Run all:
 ### Local 
 Remember to comment the kaggle upload region and run all
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
-```
+```zsh
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
 
@@ -58,7 +58,7 @@ The notebook will evaluate at the `submission` section. If you want to evaluate 
 #### Before evaluation
 - Store the models as `model_i.pkl` in `./model` under your working directory. 
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
-```
+```zsh
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
 
