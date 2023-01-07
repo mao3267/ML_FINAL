@@ -36,6 +36,13 @@ pip install -r requirements.txt
 To train the model(s), click on Runtime -> Run all:
 
 
+### Local 
+Remember to comment the kaggle upload region and run all
+- Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
+```
+unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
+```
+
 ### Features
 
 You can test your own feature sets by changing the `feature_used` list and set up the corresponding features at the `Feature Engineering` block.
