@@ -12,7 +12,7 @@ You need to get your Kaggle API Token (kaggle.json) first. The tutorial is [here
 After you start to run the whole notebook, the third block will ask you to upload your token.
 
 ### Local 
-My local environment: MACOS M1
+My local environment: MacOS M1 Ventura
 Use a virtualenv on Mac by
 ```
 brew install virtualenv
@@ -63,12 +63,10 @@ unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
 
 #### Start evalution
-To evaluate my model on test data and generate a submission, run:
+Activate the virtual environment and run all in `109550003_Final_inference.ipynb` to evaluate the models and generate a submission.
 
-```eval
-python3 eval.py
-```
-- All the preprocess on test.csv is done in `eval.py`
+
+- All the preprocess on test.csv is done in the Jupyter Notebook
 - If you want to use your own preprocessed data, comment the function `preprocess`. 
 - You can submit the submission.csv to the Kaggle as late submission to check your score.
 - Take a look at the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
