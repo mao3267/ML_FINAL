@@ -12,6 +12,7 @@ You need to get your Kaggle API Token (kaggle.json) first. The tutorial is [here
 After you start to run the whole notebook, the third block will ask you to upload your token.
 
 ### Local 
+My local environment: MACOS M1
 Use a virtualenv on Mac by
 ```
 brew install virtualenv
