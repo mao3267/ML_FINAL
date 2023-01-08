@@ -58,7 +58,7 @@ unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
 ### On Google Colab
 
-The notebook will train and then evaluate at the `submission` section. If you want to evaluate on your own models, use the `inference.ipynb`.
+The notebook will train and then evaluate at the last two sections. If you want to evaluate on your own models, use the `inference.ipynb`.
 
 ### Local
 
