@@ -51,7 +51,7 @@ You can test your own feature sets by changing the `feature_used` list and set u
 
 ## Evaluation
 ### Before evaluation
-- Store the models as `model_i.pkl` in `./model` under your working directory. 
+- Store the models as `model_i.pkl` (eq. `model_1.pkl` to `model_5.pkl`) in `./model` under your working directory. 
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
 ```zsh
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
