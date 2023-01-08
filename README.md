@@ -13,7 +13,7 @@ After you start to run the whole notebook, the third block will ask you to uploa
 
 ### Local 
 My local environment: MacOS M1 Ventura
-Use a virtualenv on Mac by
+with a virtualenv by running:
 ```zsh
 brew install virtualenv
 ```
@@ -37,32 +37,31 @@ To train the model(s), click on Runtime -> Run all:
 
 
 ### Local 
-Remember to comment the kaggle upload region and run all
+
+#### Before Training
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
 ```zsh
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
-
+#### Start Training
+Remember to comment the kaggle upload code and run all
 ### Features
 
 You can test your own feature sets by changing the `feature_used` list and set up the corresponding features at the `Feature Engineering` block.
 
 ## Evaluation
-
-### On Google Colab
-
-The notebook will evaluate at the `submission` section. If you want to evaluate on your own models, use the `eval.py` at local.
-
-### Local
-
-#### Before evaluation
+### Before evaluation
 - Store the models as `model_i.pkl` in `./model` under your working directory. 
 - Download the data from [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/data) and unzip them to `./train` by
 ```zsh
 unzip ~/Downloads/tabular-playground-series-aug-2022.zip -d train
 ```
+### On Google Colab
 
-#### Start evalution
+The notebook will train and then evaluate at the `submission` section. If you want to evaluate on your own models, use the `inference.ipynb`.
+
+### Local
+
 Activate the virtual environment and run all in `109550003_Final_inference.ipynb` to evaluate the models and generate a submission.
 
 
