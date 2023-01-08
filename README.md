@@ -66,7 +66,7 @@ Activate the virtual environment and run all in `109550003_Final_inference.ipynb
 
 
 - All the preprocess on test.csv is done in the Jupyter Notebook
-- If you want to use your own preprocessed data, comment the function `preprocess`. 
+- If you want to use your own preprocessed data, comment the function `preprocess` and modify the `feature_used` list. 
 - You can submit the submission.csv to the Kaggle as late submission to check your score.
 - Take a look at the Kaggle LeaderBoard [here](https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/leaderboard)
 
